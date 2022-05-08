@@ -30,12 +30,12 @@
     <button id="loginbtn" class="btn"><a href="/login">Login</a></button>
     </div>
 
-    <!-- Login Button -->
+    <!-- Register Button -->
     <div class="register" id="register">
     <button id="registerbtn" class="btn"><a href="/register">Register</a></button>
     </div>
 
-    <!-- Login Button -->
+    <!-- Edit Button -->
     <div class="edit" id="edit">
     <button id="editbtn" class="btn"><a href="/edit">Edit</a></button>
     </div>
