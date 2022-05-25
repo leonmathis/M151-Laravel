@@ -112,13 +112,13 @@ section h2 {
     border-radius: 0.25em;
     pointer-events: none;
     -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 /* footer */
-.logout {
+.login {
     position: fixed;
     bottom: 0;
     z-index: 1;
@@ -126,11 +126,23 @@ section h2 {
     width: 100%;
     min-height: 30px;
     font-size: 1rem;
-    margin-left: 77px;
+    margin-left: 95px;
     margin-bottom: 6px;
 }
 
-.login {
+.register {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    min-height: 30px;
+    font-size: 1rem;
+    margin-left: 6px;
+    margin-bottom: 6px;
+}
+
+.logout {
     position: fixed;
     bottom: 0;
     z-index: 1;
@@ -150,19 +162,7 @@ section h2 {
     width: 100%;
     min-height: 30px;
     font-size: 1rem;
-    margin-left: 1526px;
-    margin-bottom: 6px;
-}
-
-.register {
-    position: fixed;
-    bottom: 0;
-    z-index: 1;
-    display: flex;
-    width: 100%;
-    min-height: 30px;
-    font-size: 1rem;
-    margin-left: 1583px;
+    margin-left: 85px;
     margin-bottom: 6px;
 }
 
@@ -383,6 +383,10 @@ a:hover {
     transform: scale(1);
 }
 
+#likedshoes {
+    display: none;
+}
+
 #likedcont {
     display: none;
 }
@@ -394,3 +398,8 @@ a:hover {
 #admincont {
     display: none;
 }
+
+#adminuser {
+    display: none;
+}
+

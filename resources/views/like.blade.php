@@ -16,6 +16,13 @@
         <br>
         <br>
 
+        @if($shoes->isEmpty())
+        <div class="col-md-12" id="likedshoes">
+            <p>Table is empty.</p>
+        </div>
+
+        @else
+    
         <div class="col-md-12" id="likedshoes">
             <table class="table table-hover table-striped table-sm align-middle">
                 <thead>
@@ -49,6 +56,14 @@
             </table>
         </div>
 
+        @endif
+
+        @if($controllers->isEmpty())
+        <div class="col-md-12" id="likedcont">
+            <p>Table is empty.</p>
+        </div>
+
+        @else
         <div class="col-md-12" id="likedcont">
             <table class="table table-hover table-striped table-sm align-middle">
                 <thead>
@@ -81,6 +96,7 @@
                 </tbody>
             </table>
         </div>
+        @endif
     </div>
 </section>
 </div>

@@ -123,7 +123,19 @@ section h2 {
     width: 100%;
     min-height: 30px;
     font-size: 1rem;
-    margin-left: 85px;
+    margin-left: 95px;
+    margin-bottom: 6px;
+}
+
+.register {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    min-height: 30px;
+    font-size: 1rem;
+    margin-left: 6px;
     margin-bottom: 6px;
 }
 
@@ -139,18 +151,6 @@ section h2 {
     margin-bottom: 6px;
 }
 
-.register {
-    position: fixed;
-    bottom: 0;
-    z-index: 1;
-    display: flex;
-    width: 100%;
-    min-height: 30px;
-    font-size: 1rem;
-    margin-left: 1526px;
-    margin-bottom: 6px;
-}
-
 .edit {
     position: fixed;
     bottom: 0;
@@ -159,7 +159,7 @@ section h2 {
     width: 100%;
     min-height: 30px;
     font-size: 1rem;
-    margin-left: 1616px;
+    margin-left: 85px;
     margin-bottom: 6px;
 }
 

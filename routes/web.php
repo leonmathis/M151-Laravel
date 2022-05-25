@@ -30,19 +30,19 @@ Route::get('/controllers', function () {
 
 Route::get('/adidas', function () {
     return view('adidas');
-});
+})->middleware('auth');
 
 Route::get('/jordan', function () {
     return view('jordan');
-});
+})->middleware('auth');
 
 Route::get('/xbox', function () {
     return view('xbox');
-});
+})->middleware('auth');
 
 Route::get('/playstation', function () {
     return view('playstation');
-});
+})->middleware('auth');
 
 Route::get('/edit', function () {
     return view('edit');
@@ -59,8 +59,8 @@ Route::post('/adidas', [ShoeController::class , 'like']);
 Route::post('/playstation', [ControllerController::class , 'like']);
 Route::post('/xbox', [ControllerController::class , 'like']);
 
-Route::delete('/like/cont/{controllerId}', [ControllerController::class, 'delete']);
-Route::delete('/like/shoe/{shoeId}', [ShoeController::class, 'delete']);
+Route::delete('/like/cont/{controllerId}', [ControllerController::class, 'delete'])->middleware('auth');
+Route::delete('/like/shoe/{shoeId}', [ShoeController::class, 'delete'])->middleware('auth');
 
 Route::get('/admin', [AdminController::class , 'index'])->middleware(['auth', 'adminauth']);
 
