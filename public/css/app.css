@@ -112,13 +112,13 @@ section h2 {
     border-radius: 0.25em;
     pointer-events: none;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* footer */
-.login {
+.logout {
     position: fixed;
     bottom: 0;
     z-index: 1;
@@ -126,11 +126,11 @@ section h2 {
     width: 100%;
     min-height: 30px;
     font-size: 1rem;
-    margin-left: 85px;
+    margin-left: 77px;
     margin-bottom: 6px;
 }
 
-.logout {
+.login {
     position: fixed;
     bottom: 0;
     z-index: 1;
@@ -142,7 +142,7 @@ section h2 {
     margin-bottom: 6px;
 }
 
-.register {
+.edit {
     position: fixed;
     bottom: 0;
     z-index: 1;
@@ -154,7 +154,7 @@ section h2 {
     margin-bottom: 6px;
 }
 
-.edit {
+.register {
     position: fixed;
     bottom: 0;
     z-index: 1;
@@ -162,7 +162,7 @@ section h2 {
     width: 100%;
     min-height: 30px;
     font-size: 1rem;
-    margin-left: 1616px;
+    margin-left: 1583px;
     margin-bottom: 6px;
 }
 
@@ -402,4 +402,3 @@ a:hover {
 #adminuser {
     display: none;
 }
-

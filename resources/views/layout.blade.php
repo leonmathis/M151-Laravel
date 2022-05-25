@@ -15,29 +15,33 @@
 
     @yield('content')
 
+    <!-- Login Button -->
+    <div class="login" id="login">
+    <button id="loginbtn" class="btn"><a href="/login">Login</a></button>
+    </div>
+
+    @isset(auth()->user()->id)
     <!-- Logout Button -->
     <div class="logout" id="logout">
     <button id="logoutnbtn" class="btn"><a href="#" onclick="document.querySelector('#logoutForm').submit()">Logout</a></button>
     </div>
+    @endisset
 
     <!-- Logout Fortify -->
     <form method="POST" action="/logout" id="logoutForm">
     @csrf
     </form>
 
-    <!-- Login Button -->
-    <div class="login" id="login">
-    <button id="loginbtn" class="btn"><a href="/login">Login</a></button>
+    @isset(auth()->user()->id)
+    <!-- Edit Button -->
+    <div class="edit" id="edit">
+    <button id="editbtn" class="btn"><a href="/edit">Edit</a></button>
     </div>
+    @endisset
 
     <!-- Register Button -->
     <div class="register" id="register">
     <button id="registerbtn" class="btn"><a href="/register">Register</a></button>
-    </div>
-
-    <!-- Edit Button -->
-    <div class="edit" id="edit">
-    <button id="editbtn" class="btn"><a href="/edit">Edit</a></button>
     </div>
 
 <script src="../js/app.js"></script>
