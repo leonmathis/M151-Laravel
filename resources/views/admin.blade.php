@@ -11,8 +11,8 @@
 
     <div class=" col-md-6 container text-center">
         <button class="btn btn-light" onclick="popAdShoe()"><i class="bi bi-circle"></i></button>
-        <button class="btn btn-light" onclick="popAdController()"><i class="bi bi-circle-fill"></i></button>
-        <button class="btn btn-light" onclick="popAdUser()"><i class="bi bi-circle"></i></button>
+        <button class="btn btn-light" onclick="popAdController()"><i class="bi bi-controller"></i></button>
+        <button class="btn btn-light" onclick="popAdUser()"><i class="bi bi-person-circle"></i></button>
 
         <br>
         <br>
