@@ -18,8 +18,9 @@ class UserSeeder extends Seeder
         DB::table('users')->insert([
             [
                 'firstname' => 'Leon', 
-                'lastname' => 'Mathis', 
-                'username' => 'leonmathis',
+                'lastname' => 'Pulikkottil', 
+                'username' => 'administrator',
+                'is_admin' => '1',
                 'password' => bcrypt('123') // hash
             ]
         ]);

@@ -269,6 +269,12 @@ window.changeShade1 = function () {
   } else {}
 };
 
+window.onload = function () {
+  popShoe();
+  var buttonShoe = document.querySelector("#popshoebtn");
+  buttonShoe.focus();
+};
+
 window.popShoe = function () {
   var shoe = document.querySelector("#likedshoes");
   var cont = document.querySelector("#likedcont");

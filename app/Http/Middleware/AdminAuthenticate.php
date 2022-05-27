@@ -18,7 +18,7 @@ class AdminAuthenticate
     {
         $user = auth()->user();
 
-        if ($user->username == "admin") {
+        if ($user->is_admin == "1") {
             return $next($request);
         }
 

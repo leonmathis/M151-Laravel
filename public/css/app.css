@@ -383,10 +383,6 @@ a:hover {
     transform: scale(1);
 }
 
-#likedshoes {
-    display: none;
-}
-
 #likedcont {
     display: none;
 }
