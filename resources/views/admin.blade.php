@@ -12,10 +12,17 @@
     <div class=" col-md-6 container text-center">
         <button class="btn btn-light" onclick="popAdShoe()"><i class="bi bi-circle"></i></button>
         <button class="btn btn-light" onclick="popAdController()"><i class="bi bi-controller"></i></button>
-        <button class="btn btn-light" onclick="popAdUser()"><i class="bi bi-person-circle"></i></button>
+        <button class="btn btn-light" id="popuserbutton" onclick="popAdUser()"><i class="bi bi-person-circle"></i></button>
 
         <br>
         <br>
+
+        @if($users->isEmpty())
+        <div class="col-md-12" id="adminuser">
+            <p>Table is empty.</p>
+        </div>
+
+        @else
 
         <div class="col-md-12" id="adminuser">
             <table class="table table-hover table-striped table-sm align-middle">
@@ -35,11 +42,13 @@
                         <td>{{ $user->lastname }}</td>
                         <td>{{ $user->username }}</td>
                         <td>
+                            @if($user->is_admin != 1)
                             <form action="/admin/user/{{ $user->id }}" method="POST">
                                 @csrf
                                 @method('DELETE')
                                 <button class="btn btn-dark" title="delete"><i class="bi bi-x-circle"></i></button>
                             </form>
+                            @endif
                         </td>
                         <td><button class="btn btn-dark"><a href="/admin/user/edit/{{ $user->id }}"><i class="bi bi-pen-fill"></i></a></button></td>
                     </tr>
@@ -47,6 +56,15 @@
                 </tbody>
             </table>
         </div>
+
+        @endif
+
+        @if($shoes->isEmpty())
+        <div class="col-md-12" id="adminshoes">
+            <p>Table is empty.</p>
+        </div>
+
+        @else
 
         <div class="col-md-12" id="adminshoes">
             <table class="table table-hover table-striped table-sm align-middle">
@@ -83,6 +101,15 @@
             </table>
         </div>
 
+        @endif
+
+        @if($controllers->isEmpty())
+        <div class="col-md-12" id="admincont">
+            <p>Table is empty.</p>
+        </div>
+
+        @else
+
         <div class="col-md-12" id="admincont">
             <table class="table table-hover table-striped table-sm align-middle">
                 <thead>
@@ -117,6 +144,7 @@
                 </tbody>
             </table>
         </div>
+        @endif
     </div>
 </section>
 </div>

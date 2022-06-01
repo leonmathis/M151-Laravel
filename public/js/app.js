@@ -275,6 +275,12 @@ window.onload = function () {
   buttonShoe.focus();
 };
 
+window.onload = function () {
+  popAdUser();
+  var buttonUser = document.querySelector("#popuserbutton");
+  buttonUser.focus();
+};
+
 window.popShoe = function () {
   var shoe = document.querySelector("#likedshoes");
   var cont = document.querySelector("#likedcont");

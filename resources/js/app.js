@@ -300,6 +300,12 @@ window.onload = function () {
     buttonShoe.focus();
 };
 
+window.onload = function () {
+    popAdUser();
+    var buttonUser = document.querySelector("#popuserbutton");
+    buttonUser.focus();
+};
+
 window.popShoe = function () {
     let shoe = document.querySelector("#likedshoes");
     let cont = document.querySelector("#likedcont");
