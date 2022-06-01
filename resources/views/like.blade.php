@@ -10,8 +10,8 @@
     <br>
 
     <div class=" col-md-6 container text-center">
-        <button class="btn btn-light" id="popshoebtn" selected="true" onclick="popShoe()"><i class="bi bi-circle"></i></button>
-        <button class="btn btn-light" id ="popcontbtn" onclick="popController()"><i class="bi bi-controller"></i></button>
+        <button class="btn btn-light" id="popshoebutton" onclick="popShoe()"><i class="bi bi-circle"></i></button>
+        <button class="btn btn-light" id="popcontbutton" onclick="popController()"><i class="bi bi-controller"></i></button>
 
         <br>
         <br>

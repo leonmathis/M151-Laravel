@@ -270,15 +270,16 @@ window.changeShade1 = function () {
 };
 
 window.onload = function () {
-  popShoe();
-  var buttonShoe = document.querySelector("#popshoebtn");
-  buttonShoe.focus();
-};
-
-window.onload = function () {
-  popAdUser();
   var buttonUser = document.querySelector("#popuserbutton");
-  buttonUser.focus();
+
+  if (buttonUser) {
+    popAdUser();
+    buttonUser.focus();
+  } else {
+    popShoe();
+    var buttonShoe = document.querySelector("#popshoebutton");
+    buttonShoe.focus();
+  }
 };
 
 window.popShoe = function () {
