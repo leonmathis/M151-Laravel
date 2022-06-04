@@ -66,7 +66,7 @@ Route::get('/admin', [AdminController::class , 'index'])->middleware(['auth', 'a
 
 Route::delete('/admin/cont/{controllerId}', [AdminController::class, 'deleteCont'])->middleware(['auth', 'adminauth']);
 Route::delete('/admin/shoe/{shoeId}', [AdminController::class, 'deleteShoe'])->middleware(['auth', 'adminauth']);
-Route::delete('/admin/user/{shoeId}', [AdminController::class, 'deleteUser'])->middleware(['auth', 'adminauth']);
+Route::delete('/admin/user/{userId}', [AdminController::class, 'deleteUser'])->middleware(['auth', 'adminauth']);
 
 Route::get('/admin/controller/edit/{controllerId}', [AdminController::class , 'editController'])->middleware(['auth', 'adminauth']);
 Route::get('/admin/shoe/edit/{shoeId}', [AdminController::class , 'editShoe'])->middleware(['auth', 'adminauth']);
